@@ -7,15 +7,17 @@ So I decided to stick with Python. Of course I tried to do exercise using Go but
 allow me to properly implement the idea.
 
 What I used:
-Python 3.6.8
-Redis on docker
-Celery worker and beater for task scheduling and async execution
-As db I didn't prepare anything fancy - simple built-in sqlite3.
+- Python 3.6.8
+- Django Rest Framework
+- Redis on docker
+- Celery worker and beater for task scheduling and async execution
+- As db I didn't prepare anything fancy - simple built-in sqlite3.
 
 What can be done more:
 TESTS! I didn't have time to write them, unfortunately.
 Also I could try to dockerize whole env. 
 If I can be honest, this app is a product of one day of work. I hope I got it right at least to some extent.
+
 
 Some notes for deployment on localhost.
 1. clean env with Python 3.6.8
