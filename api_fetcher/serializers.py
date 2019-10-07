@@ -13,4 +13,4 @@ class ItemSerializer(serializers.ModelSerializer):
 class HistorySerializer(serializers.ModelSerializer):
     class Meta:
         model = History
-        fields = ('response', 'duration')
+        fields = ('response', 'duration', 'created_at')

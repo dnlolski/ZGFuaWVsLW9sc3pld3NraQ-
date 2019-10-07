@@ -23,9 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'z$#3f240djt8y!8cl!!d%zm=w^9m5fw(ftt_lpe^^90ax9dk%='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 1048576
 
 
 # Application definition

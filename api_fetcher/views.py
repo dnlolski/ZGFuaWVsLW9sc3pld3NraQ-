@@ -35,7 +35,7 @@ class ItemViewSet(viewsets.ModelViewSet):
                                            args='["{}","{}"]'.format(url, item_id))
         task.save()
 
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response({'id': item_id}, status=status.HTTP_201_CREATED)
 
 
 class HistoryViewSet(viewsets.ModelViewSet):
