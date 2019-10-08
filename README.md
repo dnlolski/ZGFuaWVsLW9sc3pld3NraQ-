@@ -26,7 +26,7 @@ Some notes for deployment on localhost.
 4. celery -A rest_api_fetcher worker -l info
 5. celery -A rest_api_fetcher beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
 6. ./manage.py runserver 8080
-Small notes for cUrl testing. DRF requires content-type specified. So just add another switch to command, like so
+7. For cUrl testing. DRF requires content-type specified. So just add another switch to command, like so
 -H "Content-Type:application/json"
 
 Thank you for this opportunity. Was fun to write this small assignment.
