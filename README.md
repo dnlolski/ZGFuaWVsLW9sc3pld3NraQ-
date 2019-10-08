@@ -23,9 +23,9 @@ Some notes for deployment on localhost.
 1. clean env with Python 3.6.8
 2. pip install -r requirements.txt
 3. docker run --name redis-api-fetcher -d redis 
-4. celery -A rest_api_fetcher worker -l info
-5. celery -A rest_api_fetcher beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
-6. ./manage.py runserver 8080
+4. ./manage.py runserver 8080
+5. celery -A rest_api_fetcher worker -l info
+6. celery -A rest_api_fetcher beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
 7. For cUrl testing. DRF requires content-type specified. So just add another switch to command, like so
 -H "Content-Type:application/json"
 
