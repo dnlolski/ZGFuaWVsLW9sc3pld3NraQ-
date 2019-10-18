@@ -1,10 +1,10 @@
-# Api Fetcher
+# REST API fetcher
 
-Hi,
+App is awaiting input from api. When received is starting to pull data from httbin site every given interval of received value from API.
 
-Due to flu I got recently I wasn't ably to properly prepare for golang implentation. 
-So I decided to stick with Python. Of course I tried to do exercise using Go but I few days I got left didn't really
-allow me to properly implement the idea.
+Methods examples:
+
+
 
 What I used:
 - Python 3.6.8
@@ -16,7 +16,7 @@ What I used:
 What can be done more:
 TESTS! I didn't have time to write them, unfortunately.
 Also I could try to dockerize whole env. 
-If I can be honest, this app is a product of one day of work. I hope I got it right at least to some extent.
+If I can be honest, this app is a product of one day of work. Good fun
 
 
 Some notes for deployment on localhost.
@@ -28,8 +28,3 @@ Some notes for deployment on localhost.
 6. celery -A rest_api_fetcher beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
 7. For cUrl testing. DRF requires content-type specified. So just add another switch to command, like so
 -H "Content-Type:application/json"
-
-Thank you for this opportunity. Was fun to write this small assignment.
-
-Regards,
-Daniel
