@@ -5,20 +5,19 @@ App is awaiting input from api. When received is starting to pull data from httb
 Methods:
 
 GET /api/fetcher - returns all 
-$ curl -s 127.0.0.1:8080/api/fetcher
+  $ curl -s 127.0.0.1:8080/api/fetcher
 
 GET /api/fether/<id> - returns giveen record per id
-$ curl -s 127.0.0.1:8080/api/fetcher/1
+  $ curl -s 127.0.0.1:8080/api/fetcher/1
 
 POST api/fetcher - creates given record per id
-$ curl -si 127.0.0.1:8080/api/fetcher -X POST -d '{"url":
-"https://httpbin.org/range/15","interval":60}'
+  $ curl -si 127.0.0.1:8080/api/fetcher -X POST -d '{"url": "https://httpbin.org/range/15","interval":60}'
 
 DELETE api/fetcher/<id>- deletes given record per id
-$ curl -s 127.0.0.1:8080/api/fetcher/12 -X DELETE
+  $ curl -s 127.0.0.1:8080/api/fetcher/12 -X DELETE
   
-GET /api/fetcher/<id>/history - all history of pulled data from httpbin
-$ curl -si 127.0.0.1:8080/api/fetcher/1/history
+GET /api/fetcher/<id>/history - all history of pulled data from httpbin 
+  $ curl -si 127.0.0.1:8080/api/fetcher/1/history
 
 
 What I used:
